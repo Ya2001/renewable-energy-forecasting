@@ -7,6 +7,8 @@ It started as my MSc Data Analytics dissertation (University of Strathclyde, 202
 notebook, found it did not support its own conclusions, and rebuilt it here. The audit is part of the project: see
 [What changed from the dissertation](#what-changed-from-the-dissertation).
 
+**Live demo:** [renewable-forecast-api.onrender.com/docs](https://renewable-forecast-api.onrender.com/docs). It runs on a free tier, so the first request after a quiet spell can take about a minute while it wakes.
+
 **What the model is, and is not.** It maps the weather in a given hour to production in that hour. It does not forecast
 the weather. To produce a forecast, feed it forecast weather values (for example from a numerical weather prediction).
 The scores below use observed (reanalysis) weather, so they are an upper bound on forecast performance.
@@ -127,8 +129,8 @@ curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -
 
 ### Deploy
 
-- **Docker:** `docker build -t renewable-api . && docker run -p 8000:8000 renewable-api` (the Dockerfile has not yet been built on my machine; the first Render build is its first test)
-- **Render:** the included [`render.yaml`](render.yaml) is a Blueprint. Connect the repo in Render and it builds the Dockerfile on the free tier.
+- **Docker:** `docker build -t renewable-api . && docker run -p 8000:8000 renewable-api`
+- **Render:** the included [`render.yaml`](render.yaml) is a Blueprint. Connect the repo in Render and it builds the Dockerfile on the free tier. This is how the live demo above is deployed.
 
 ## Layout
 
