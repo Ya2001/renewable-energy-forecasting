@@ -1,0 +1,9 @@
+source,alignment,protocol,n_rows,rmse,mae,r2
+wind,dissertation,random,26493,1707.9957,1295.6475,0.7549
+wind,dissertation,chronological,26493,2039.2762,1536.2253,0.7181
+wind,utc,random,26490,1676.7205,1266.2904,0.7665
+wind,utc,chronological,26490,1994.7436,1491.324,0.7303
+solar,dissertation,random,26493,865.4177,530.1609,0.7006
+solar,dissertation,chronological,26493,1077.0196,645.6526,0.651
+solar,utc,random,26490,508.3341,262.3457,0.8992
+solar,utc,chronological,26490,739.8471,385.0279,0.8353

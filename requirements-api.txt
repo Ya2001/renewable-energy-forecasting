@@ -1,0 +1,9 @@
+# Runtime dependencies for the prediction API (kept small for the Docker image)
+fastapi==0.128.8
+joblib==1.5.3
+numpy==2.0.2
+pandas==2.3.3
+pydantic==2.13.5
+scikit-learn==1.6.1
+scipy==1.13.1
+uvicorn==0.39.0

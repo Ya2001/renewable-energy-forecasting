@@ -1,0 +1,28 @@
+{
+  "wind": {
+    "model": "random_forest",
+    "heldout_chronological": {
+      "rmse": 1994.7436,
+      "mae": 1491.324,
+      "r2": 0.7303
+    },
+    "trained_rows": 26490,
+    "data_range": [
+      "2020-06-22",
+      "2023-06-30"
+    ]
+  },
+  "solar": {
+    "model": "random_forest",
+    "heldout_chronological": {
+      "rmse": 739.8471,
+      "mae": 385.0279,
+      "r2": 0.8353
+    },
+    "trained_rows": 26490,
+    "data_range": [
+      "2020-06-22",
+      "2023-06-30"
+    ]
+  }
+}

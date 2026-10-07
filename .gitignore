@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+~$*
+keras_tuner_dir/
+# Large third-party dataset: download it yourself (see data/README.md)
+data/raw/intermittent-renewables-production-france.csv

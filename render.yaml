@@ -1,0 +1,7 @@
+# Render Blueprint: one-click deploy of the prediction API from this repo.
+services:
+  - type: web
+    name: renewable-forecast-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
